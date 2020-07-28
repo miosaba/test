@@ -1,0 +1,10 @@
+#dm送信
+dm=await message.author.create_dm()#メッセージ送信者へDM作成
+awawit dm.send('文章')#DM送信
+
+#メンション
+if ing.startswith("<@HamterRAW>"):#文字列の開始が一致
+     member_mention="<@HamterRAW>"#これはいけるはず
+     await message.channel.send(f'{member_mention}おい呼ばれてるぞ')
+
+#
