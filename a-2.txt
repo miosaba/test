@@ -13,3 +13,8 @@ if message.content == '/Instructions':
         'このbotは特定の単語に反応して発言します\n
         気が向いたときに更新していますので遊んであげてください\n
         現在手動で稼働しているので常時反応することができません')
+
+#コマンド表示
+if message.content == '/command':
+        await message.channel.send(
+        'Instructions,')
