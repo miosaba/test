@@ -7,4 +7,9 @@ if ing.startswith("<@HamterRAW>"):#文字列の開始が一致
      member_mention="<@HamterRAW>"#これはいけるはず
      await message.channel.send(f'{member_mention}おい呼ばれてるぞ')
 
-#
+#取扱説明書
+if message.content == '/Instructions':
+        await message.channel.send(
+        'このbotは特定の単語に反応して発言します\n
+        気が向いたときに更新していますので遊んであげてください\n
+        現在手動で稼働しているので常時反応することができません')
