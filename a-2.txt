@@ -37,7 +37,7 @@ random_content=['はむすき','はむきらい','はむふつう']
 if message.content == "/randamDM":
     await message.channel.send('何かコメントして /endで終了')
     while message.content == "/end":#文字列判定
-        randam_dm=addend(await message.author.create_dm())#ユーザーを保存
+        randam_dm.addend(await message.author.create_dm())#ユーザーを保存
     for dm in randam_dm:
         content = random.choice(random_contents)# 送信するメッセージをランダムで決める
         awawit dm.send(content)#DM送信
