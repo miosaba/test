@@ -44,4 +44,4 @@ if message.content == "/randamDM":
     for dm in randam_dm:
         content = random.choice(random_contents)# 送信するメッセージをランダムで決める
         await dm.send(content)#DM送信
-randam_dm.clear()
+    randam_dm.clear()
