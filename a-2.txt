@@ -40,5 +40,5 @@ if message.content == "/randamDM":
         randam_dm.addend(await message.author.create_dm())#ユーザーを保存
     for dm in randam_dm:
         content = random.choice(random_contents)# 送信するメッセージをランダムで決める
-        awawit dm.send(content)#DM送信
+        await dm.send(content)#DM送信
     randam_dm.clear()
