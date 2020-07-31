@@ -6,11 +6,38 @@ import ANS
         await dm.send(ans.DM)  # DM送信
     elif message.content == '/command':  # コマンド表示
         await message.channel.send(ans.command)
-        
+    elif message.content.startswith('HamterRAW') or 'HamterRAW' in message.content:  # 文字列の開始が一致
+         await message.channel.send(ans.HamterRAW)
+    elif message.content == 'ハム' or 'ハム' in message.content:
+         await message.channel.send(ans.hamu)
+    elif '太郎' in message.content:
+         await message.channel.send(ans.taro)
+    elif message.content == 'Ham':
+         await message.channel.send(ans.lileGold)
+    elif message.content == 'ビビりハム':
+         await message.channel.send(ans.bibiri)
+    elif message.content == '嫌い':
+         await message.channel.send(ans.dntlike)
+    elif message.content == 'ham':
+         await message.channel.send(ans.ham)
+    elif 'はむカービィ' in message.content:
+         await message.channel.send(ans.kirby)
+    elif 'LeGal' in message.content or 'リーガルさん' in message.content:
+         await message.channel.send(ans.LeGal)
+
+
 =============================================================
-別ファイル ANS
+別ファイル ANS リストにできるならリストにする
 
 Instructions='このbotは特定の単語に反応して発言します\n気が向いたときに更新していますので遊んであげてください\n現在手動で稼働しているので常時反応することができません'
 DM='これは秘密のメッセージだぞ'
 command='Instructions,DM'
-
+HamterRAW="<@312554285009469442>おい呼ばれてるぞ"
+hamu='ローストハム'
+taro='ヘケッ'
+likeGold='大好きなのは血だまりと金'
+bibiri='ヘッドフォンぶん投げHamterRAW'
+dntlike='Ham好きkillyou'
+ham='あほのham'
+Kirby='俺はむらびと使い'
+LeGal='キャー素敵なのだぁ!!'
