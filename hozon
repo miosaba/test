@@ -41,3 +41,13 @@ dntlike='Ham好きkillyou'
 ham='あほのham'
 Kirby='俺はむらびと使い'
 LeGal='キャー素敵なのだぁ!!'
+
+
+---------------------------------------------------------------
+import tmp
+print(tmp.tmp[1])
+print(tmp.ran)
+
+
+tmp=[0,2,4]
+ran='ran'
