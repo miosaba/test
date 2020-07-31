@@ -1,0 +1,16 @@
+import ANS  
+    if message == '/Instructions':  # 説明書
+        await message.channel.send(ans.Instructions)
+    elif message.content == '/DM':  # dm送信
+        dm = await message.author.create_dm()  # メッセージ送信者へDM作成
+        await dm.send(ans.DM)  # DM送信
+    elif message.content == '/command':  # コマンド表示
+        await message.channel.send(ans.command)
+        
+=============================================================
+別ファイル ANS
+
+Instructions='このbotは特定の単語に反応して発言します\n気が向いたときに更新していますので遊んであげてください\n現在手動で稼働しているので常時反応することができません'
+DM='これは秘密のメッセージだぞ'
+command='Instructions,DM'
+
